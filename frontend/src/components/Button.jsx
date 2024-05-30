@@ -1,10 +1,10 @@
 import React from "react";
 
-function Button() {
+function Button(props) {
     return (
         <div>
-            <button class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 m-2 border border-gray-400 rounded shadow">
-                Button
+            <button onClick={props.handleClick} className="bg-slate-100 hover:bg-gray-200 hover:scale-105 text-gray-800 font-semibold py-2 px-4 m-2 rounded shadow-md">
+                {props.children}
             </button>
         </div>
     )

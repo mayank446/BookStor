@@ -1,14 +1,28 @@
-import react from 'react'
+import React from 'react'
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+}
+  from 'react-router-dom';  
 
-import Topbar from './components/Topbar'
-import Sidebar from './components/Sidebar'
+
+import SignIn from './pages/SignIn'
+import SignUp from './pages/SignUp'
 import Dashboard from './pages/Dashboard'
 
 function App() {
 
   return (
-    <div className=''>
-      <Dashboard />
+    <div >
+      <Router>
+        <Routes>
+          <Route path='' element={<Dashboard />}></Route>
+          <Route path='signup' element={<SignUp/>}></Route>
+          <Route path='signin' element={<SignIn />}></Route>
+        </Routes>
+      </Router>
     </div>
   )
 }

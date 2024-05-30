@@ -8,7 +8,7 @@ function Dashboard() {
     return (
         <div className="bg-slate-100 w-screen h-screen overflow-scroll no-scrollbar">
             <RecoilRoot>
-                <Topbar/>
+                <Topbar />
                 <Books />
                 <Books />
                 <Books />
@@ -17,4 +17,4 @@ function Dashboard() {
     )
 }
 
-export default Dashboard
+export default Dashboard;
