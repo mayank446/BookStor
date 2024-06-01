@@ -9,6 +9,9 @@ function SignIn() {
     function handleClick() {
         navigate('/')
     }
+    function toSignup() {
+        navigate('/signup')
+    }
     return (
         <div className="flex flex-col justify-center w-screen h-screen bg-slate-100 ">
             <div className='flex flex-col m-auto p-2'>
@@ -32,7 +35,7 @@ function SignIn() {
                 </div>
 
                 <div className='flex justify-center text-blue-500 font-medium p-1'>
-                    Don't have an account, <a className='indent-1 hover:text-blue-600' href='/signup'> create one!</a>
+                    Don't have an account, <button onClick={toSignup} className='indent-1 hover:text-blue-600'> create one!</button>
                 </div>
             </div>
         </div>
