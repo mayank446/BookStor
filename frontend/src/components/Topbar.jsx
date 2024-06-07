@@ -1,5 +1,4 @@
 import React from "react"
-// import { useNavigate } from "react-router"
 import { useNavigate } from "react-router-dom"
 import logo from "../assets/logo.png"
 import avatar from "../assets/avatar.png"
@@ -37,7 +36,7 @@ function Topbar() {
             <div className="flex col-span-1 sm:col-span-2 justify-end">
                 <button 
                     onClick={accountHandler}
-                    className="h-10 w-10 my-auto mr-8 rounded-full overflow-hidden">
+                    className="h-10 w-10 my-auto rounded-full overflow-hidden">
                     <img src={avatar} />
                 </button>
             </div>
