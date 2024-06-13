@@ -33,7 +33,7 @@ function Topbar() {
                 </div>
             </div>
 
-            <div className="flex col-span-1 sm:col-span-2 justify-end">
+            <div className="flex col-span-1 sm:col-span-2 justify-end mr-8">
                 <button 
                     onClick={accountHandler}
                     className="h-10 w-10 my-auto rounded-full overflow-hidden">
